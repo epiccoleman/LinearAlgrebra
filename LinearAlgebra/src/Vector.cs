@@ -36,9 +36,10 @@ namespace LinearAlgebra
             }
         } 
 
-        public Vector()
+        public Vector(double x = 0d, double y = 0d)
         {
-            m_x = m_y = 0;
+            m_x = x;
+            m_y = y;
         }
     }
 }
