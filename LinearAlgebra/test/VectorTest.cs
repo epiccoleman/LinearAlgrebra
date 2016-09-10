@@ -57,5 +57,18 @@ namespace LinearAlgebra
 
             Assert.AreEqual(expectedVec, actualVec);
         }
+
+        [TestMethod]
+        public void VectorsCanBeSubtracted()
+        {
+            Vector vec1 = new Vector(4, 5, 6);
+            Vector vec2 = new Vector(1, 2, 3);
+
+
+            Vector expectedVec = new Vector(3, 3, 3);
+            Vector actualVec = vec1 - vec2;
+
+            Assert.AreEqual(expectedVec, actualVec);
+        }
     }
 }

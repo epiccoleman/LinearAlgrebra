@@ -47,6 +47,15 @@ namespace LinearAlgebra
             return new Vector(new_x, new_y, new_z);
         }
 
+        public static Vector operator -(Vector v1, Vector v2)
+        {
+            double new_x = v1.x - v2.x;
+            double new_y = v1.y - v2.y;
+            double new_z = v1.z - v2.z;
+
+            return new Vector(new_x, new_y, new_z);
+        }
+
         public static bool operator ==(Vector v1, Vector v2)
         {
             return v1.Equals(v2);
