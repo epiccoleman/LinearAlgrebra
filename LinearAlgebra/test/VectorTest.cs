@@ -27,7 +27,7 @@ namespace LinearAlgebra
         }
 
         [TestMethod]
-        public void VectorsCanBeComparedForEquality()
+        public void IdenticalVectorsAreEqual()
         {
             Vector vec1 = new Vector(1, 1, 1);
             Vector vec2 = new Vector(1, 1, 1);
@@ -37,7 +37,7 @@ namespace LinearAlgebra
         }
 
         [TestMethod]
-        public void VectorsCanBeComparedForInequality()
+        public void DifferentVectorsAreNotEqual()
         {
             Vector vec1 = new Vector(1, 1, 1);
             Vector vec2 = new Vector(1, 2, 3);
@@ -69,6 +69,13 @@ namespace LinearAlgebra
             Vector actualVec = vec1 - vec2;
 
             Assert.AreEqual(expectedVec, actualVec);
+        }
+
+        [TestMethod]
+        public void VectorsCanBeRepresentedAsAString()
+        {
+            Vector vec = new Vector(4, 2, 0);
+            Assert.AreEqual("vec: x:4.000 y:2.000 z:0.000", vec.ToString()); 
         }
     }
 }

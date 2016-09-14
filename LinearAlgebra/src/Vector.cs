@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LinearAlgebra
 {
-    class Vector
+    public class Vector
     {
 
         private double m_x;
@@ -64,6 +64,11 @@ namespace LinearAlgebra
         public static bool operator !=(Vector v1, Vector v2)
         {
             return !v1.Equals(v2);
+        }
+
+        public override string ToString()
+        {
+            return $"vec: x:{String.Format("{0:F3}", m_x)} y:{String.Format("{0:F3}", m_y)} z:{String.Format("{0:F3}", m_z)}";
         }
 
         public override bool Equals(object obj)
