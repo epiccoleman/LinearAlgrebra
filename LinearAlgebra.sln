@@ -5,6 +5,11 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinearAlgebra", "LinearAlgebra\LinearAlgebra.csproj", "{CE553BE7-50BB-407F-9F00-B797B24A3EE9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinearAlgebraCalc", "LinearAlgebraCalc\LinearAlgebraCalc.csproj", "{7BCF1375-0A91-4309-9A8A-50A9D925D182}"
+	ProjectSection(ProjectDependencies) = postProject
+		{CE553BE7-50BB-407F-9F00-B797B24A3EE9} = {CE553BE7-50BB-407F-9F00-B797B24A3EE9}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +20,10 @@ Global
 		{CE553BE7-50BB-407F-9F00-B797B24A3EE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CE553BE7-50BB-407F-9F00-B797B24A3EE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CE553BE7-50BB-407F-9F00-B797B24A3EE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BCF1375-0A91-4309-9A8A-50A9D925D182}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BCF1375-0A91-4309-9A8A-50A9D925D182}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BCF1375-0A91-4309-9A8A-50A9D925D182}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BCF1375-0A91-4309-9A8A-50A9D925D182}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
